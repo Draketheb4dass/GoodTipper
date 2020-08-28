@@ -10,11 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var billField: UITextField!
+    @IBOutlet weak var billAmountTextField: UITextField!
     @IBOutlet weak var totalLabel: UILabel!
-    @IBOutlet weak var tipLabel: UILabel!
+    @IBOutlet weak var tipPercentageLabel: UILabel!
     
-    @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var tipAmountSegmentedControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -25,14 +25,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func calculateTip(_ sender: Any) {
-        let bill = Double(billField.text!) ?? 0
+        let bill = Double(billAmountTextField.text!) ?? 0
         
         let tipPercentages = [0.15, 0.18, 0.2]
         
-        let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
+        let tip = bill * tipPercentages[tipAmountSegmentedControl.selectedSegmentIndex]
         let total = bill + tip
         
-        tipLabel.text = String(format: "$%.2f", tip)
+        tipPercentageLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
     }
 }

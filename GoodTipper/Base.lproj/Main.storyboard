@@ -61,7 +61,7 @@
                                 <rect key="frame" x="58" y="395" width="313" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="16%"/>
+                                    <segment title="15%"/>
                                     <segment title="18%"/>
                                     <segment title="20%"/>
                                 </segments>
@@ -86,9 +86,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="cVr-XT-Ctq"/>
                     <connections>
-                        <outlet property="billField" destination="lZk-uu-SBd" id="jXb-tp-NFU"/>
-                        <outlet property="tipControl" destination="NEW-k1-7UZ" id="F5T-7w-tSe"/>
-                        <outlet property="tipLabel" destination="J8k-yI-IJQ" id="sFl-KV-77L"/>
+                        <outlet property="billAmountTextField" destination="lZk-uu-SBd" id="jXb-tp-NFU"/>
+                        <outlet property="tipAmountSegmentedControl" destination="NEW-k1-7UZ" id="F5T-7w-tSe"/>
+                        <outlet property="tipPercentageLabel" destination="J8k-yI-IJQ" id="sFl-KV-77L"/>
                         <outlet property="totalLabel" destination="6dR-4c-VlF" id="Kt6-Uc-4LC"/>
                     </connections>
                 </viewController>
